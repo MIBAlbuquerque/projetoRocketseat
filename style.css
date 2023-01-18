@@ -25,6 +25,7 @@
 
 body {
   background: var(--background-mode) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -144,4 +145,15 @@ footer {
 }
 footer a {
   text-decoration: none;
+}
+
+/* media queries */
+
+@media (min-width: 700px){
+  :root{
+    --background-mode: url(./assets/bg-desktop.jpg);
+}
+  .light{
+    --background-mode: url(./assets/bg-desktop-light.jpg);
+  }
 }
